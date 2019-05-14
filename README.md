@@ -378,6 +378,20 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/react-native-image-crop-picker#backers" target="_blank"><img src="https://opencollective.com/react-native-image-crop-picker/backers.svg?width=890"></a>
 
+## Cropper
+```
+ImageCropPicker.openCropper({
+  path: data.uri,
+  hideBottomControls: false,
+  enableRotationGesture: true,
+  includeExif: false,
+  freeStyleCropEnabled: true,
+  cropperToolbarTitle: 'Crop the image to fit to only 1 question.',
+}).then(image => {
+  console.log('DONE ::: ', JSON.stringify(image));
+})
+.catch(err => console.log('DONE ::', err));
+```
 
 ## Sponsors
 
