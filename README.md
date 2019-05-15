@@ -380,17 +380,21 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 ## Cropper
 ```
-ImageCropPicker.openCropper({
-  path: data.uri,
-  hideBottomControls: false,
-  enableRotationGesture: true,
-  includeExif: false,
-  freeStyleCropEnabled: true,
-  cropperToolbarTitle: 'Crop the image to fit to only 1 question.',
-}).then(image => {
-  console.log('DONE ::: ', JSON.stringify(image));
-})
-.catch(err => console.log('DONE ::', err));
+  ImageCropPicker.openCropper({
+    path: data.uri,
+    hideBottomControls: false,
+    enableRotationGesture: true,
+    includeExif: false,
+    freeStyleCropEnabled: true,
+    cropperToolbarTitle: 'Crop the image to fit to only 1 question.',
+    cropperActiveWidgetColor: "#ffffff",
+    cropperStatusBarColor:"#000000",
+    cropperToolbarColor:"#000000",
+    freeStyleCropEnabled:true,
+  }).then(image => {
+    console.log(image);
+  })
+  .catch(err => console.log('DONE ::', err));
 ```
 
 ## Sponsors
