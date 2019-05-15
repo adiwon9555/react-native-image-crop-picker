@@ -21,5 +21,5 @@ android {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.github.psk200:ucrop:cropper_ui-SNAPSHOT'
+    implementation 'com.github.psk200:ucrop:cropper_ui_1-SNAPSHOT'
 }
